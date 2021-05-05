@@ -1,41 +1,50 @@
-@extends('layouts.app')
-
+@extends('frontend.layouts.master')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+
+ <section class="page-section" id="services">
+            <div class="container">
+                <div class="card-header">{{ __('Login') }}</div>
+        <section class="page-section bg-primary" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                     <form method="POST" action="{{ route('login') }}">
                         @csrf
+                        @if($errors->any())
+                        <div class="alert alert-success alert-dismissible">
+                          <button type="button" class="close" data-dismiss="alert">&times;</button>
+                          @foreach($errors->all() as $error)
+                          <strong>{{$error}}</strong> 
+                          @endforeach
+                        </div>
+                        @endif
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}
+                                <i class="fas fa-user fa-1x mb-1 text-muted"></i>
+                            </label>
 
                             <div class="col-md-6">
+
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">
+                                {{ __('Password') }}
+                                <i class="fas fa-key fa-1x mb-1 text-muted"></i> 
+                                
 
-                            <div class="col-md-6">
+                            </label>
+
+                            <div class="col-md-6 ">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+
+                                
                             </div>
                         </div>
 
@@ -65,6 +74,33 @@
                             </div>
                         </div>
                     </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+                <hr class="divider my-4" />
+                
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                
+
+                <div class="card-body">
+                    
                 </div>
             </div>
         </div>
