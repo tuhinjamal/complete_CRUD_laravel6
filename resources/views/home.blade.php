@@ -33,17 +33,7 @@
 </nav>
   
 <div class="container">
-  <h3>Basic Navbar Example</h3>
-  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
-</div>
-
-
-<div class="container">
-
-    <div class="row justify-content-center">
-
-  <!-- /.navbar -->
-        <div class="col-md-8">
+  <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
@@ -58,6 +48,8 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
+
+
+
 @endsection
