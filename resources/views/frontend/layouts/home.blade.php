@@ -28,21 +28,14 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-10 align-self-end">
-                        <h1 class="text-uppercase text-white font-weight-bold">This app is developed by Tuhin Jamal</h1>
-                        <hr class="divider my-4" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">This is a easy solution of ledger management in one touch</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <div id="particles">
+  <div id="webcoderskull">
+    <h1>PARTICLE BACKGROUND</h1>
+    <p>Web Coder Skull Team</p>
+    
+  </div>
+</div>
+
         
         <!-- Footer-->
         <footer class="bg-light py-5">
