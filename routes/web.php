@@ -20,3 +20,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'Frontend\frontendcontroller@index')->name('home');
+
+
+Route::prefix('sliders')->group(function(){
+
+	//Route::get('/view', 'ledger\LedgerController@view')->name('sliders.view');
+	Route::get('/viewer', 'ledger\LedgerController@viewer')->name('sliders.viewer');
+	Route::get('/add', 'ledger\LedgerController@add')->name('sliders.add');
+	Route::post('/store', 'ledger\LedgerController@store')->name('sliders.store');
+	Route::get('/edit/{id?}', 'ledger\LedgerController@edit')->name('sliders.edit');
+	Route::post('/upadate/{id?}', 'ledger\LedgerController@update')->name('sliders.update');
+	Route::get('/delete/{id?}', 'ledger\LedgerController@delete')->name('sliders.delete');
+});
