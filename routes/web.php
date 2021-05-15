@@ -19,9 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::prefix('frontend')->group(function(){
-
-	Route::get('/', 'frontend\FrontenController@view')->name('frontend.view');
-	
-
-});
+Route::get('/', 'Frontend\frontendcontroller@index')->name('home');

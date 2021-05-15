@@ -14,19 +14,11 @@ use App\Model\Contacts;
 class frontendcontroller extends Controller
 {
 
-     public function view()
-    {
-        
-        return view('frontend.layouts.home',$data);
-    }
+   
     public function index()
     {
-        $data['alldata']=Contacts::all();
-        $data['logo'] = Logo::first();
-        $data['sliders'] = Slider::all();
-        $data['missions'] = Mission::all();
-        $data['news'] = News::all();
-    	return view('frontend.layouts.home',$data);
+        
+    	return view('frontend.layouts.home');
     }
     public function about()
     {   
