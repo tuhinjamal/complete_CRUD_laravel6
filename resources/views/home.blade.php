@@ -14,13 +14,7 @@
                         </div>
                     @endif
 
-                   <div id="particles">
-  <div id="webcoderskull">
-    <h1>PARTICLE BACKGROUND</h1>
-    <p>Web Coder Skull Team</p>
-    
-  </div>
-</div>
+                    You are logged in!
                 </div>
             </div>
         </div>
