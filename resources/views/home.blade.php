@@ -53,26 +53,24 @@
   </div>
 </nav>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
 
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    @if (session('status'))
+    <a href="#" class="btn btn-primary">{{ session('status') }}</a>
+  
+     @endif
+  </div>
+  <div class="card-footer text-muted">
+   Hey You are logged in!
+  </div>
 </div>
-
 
 
 @endsection
