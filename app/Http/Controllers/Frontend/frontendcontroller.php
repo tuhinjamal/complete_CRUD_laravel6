@@ -13,6 +13,12 @@ use App\Model\Contacts;
 
 class frontendcontroller extends Controller
 {
+
+     public function view()
+    {
+        
+        return view('frontend.layouts.home',$data);
+    }
     public function index()
     {
         $data['alldata']=Contacts::all();
