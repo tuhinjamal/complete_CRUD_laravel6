@@ -1,7 +1,12 @@
 @extends('frontend.layouts.master')
 
 @section('content')
- <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+
+
+<div class="container">
+
+    <div class="row justify-content-center">
+         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     
 
@@ -55,10 +60,6 @@
             </div>
   </nav>
   <!-- /.navbar -->
-
-<div class="container">
-
-    <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
