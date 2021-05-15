@@ -14,7 +14,13 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                   <div id="particles">
+  <div id="webcoderskull">
+    <h1>PARTICLE BACKGROUND</h1>
+    <p>Web Coder Skull Team</p>
+    
+  </div>
+</div>
                 </div>
             </div>
         </div>
