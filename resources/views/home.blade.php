@@ -43,7 +43,11 @@
         </div>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href=" {{route('ledgermodel.viewer')}} ">Ledger</a>
+        <a class="nav-link" href=" {{route('ledgermodel.viewer')}} ">View Ledger</a>
+      </li>
+    </ul>
+     <li class="nav-item active">
+        <a class="nav-link" href=" {{route('ledgermodel.add')}} ">Add Ledger</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
