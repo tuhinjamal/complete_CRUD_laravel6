@@ -8,6 +8,12 @@ use Auth;
 use App\model\ledgermodels;
 class ledger extends Controller
 {
+
+    public function master()
+    {
+        return view('frontend.ledgermodel.master');
+    }
+
     public function viewer()
         {
             //to use array function
