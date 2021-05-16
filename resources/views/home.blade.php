@@ -42,8 +42,8 @@
               @endguest  
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+      <li class="nav-item active">
+        <a class="nav-link" href=" {{route('ledgermodel.viewer')}} ">Ledger</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

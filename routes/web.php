@@ -25,10 +25,10 @@ Route::get('/', 'Frontend\frontendcontroller@index')->name('home');
 Route::prefix('ledger')->group(function(){
 
 	//Route::get('/view', 'ledger\LedgerController@view')->name('sliders.view');
-	Route::get('/viewer', 'ledger\LedgerController@viewer')->name('sliders.viewer');
-	Route::get('/add', 'ledger\LedgerController@add')->name('sliders.add');
-	Route::post('/store', 'ledger\LedgerController@store')->name('sliders.store');
-	Route::get('/edit/{id?}', 'ledger\LedgerController@edit')->name('sliders.edit');
-	Route::post('/upadate/{id?}', 'ledger\LedgerController@update')->name('sliders.update');
-	Route::get('/delete/{id?}', 'ledger\LedgerController@delete')->name('sliders.delete');
+	Route::get('/viewer', 'ledger\LedgerController@viewer')->name('ledgermodel.viewer');
+	Route::get('/add', 'ledger\LedgerController@add')->name('ledgermodel.add');
+	Route::post('/store', 'ledger\LedgerController@store')->name('ledgermodel.store');
+	Route::get('/edit/{id?}', 'ledger\LedgerController@edit')->name('ledgermodel.edit');
+	Route::post('/upadate/{id?}', 'ledger\LedgerController@update')->name('ledgermodel.update');
+	Route::get('/delete/{id?}', 'ledger\LedgerController@delete')->name('ledgermodel.delete');
 });
