@@ -88,7 +88,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{route('profiles.view')}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
                                 <a href=""></a>
@@ -125,9 +125,7 @@
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="{{(!empty(Auth::user()->image))?url('upload/user_images/'.Auth::user()->image):url('upload/no_image.png')}}" class="img-circle elevation-2" alt="User Image">
-        </div>
+       
         @guest
         @if (Route::has('register'))
         @endif
@@ -139,7 +137,6 @@
         @endguest
       </div>
 
-     @include('backend.layouts.sidebar')
     </div>
     <!-- /.sidebar -->
   </aside>
