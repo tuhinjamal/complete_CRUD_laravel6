@@ -54,7 +54,7 @@
   <hr class="my-4">
   <p>experiance a new better smooth ledger management system</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="{{route('ledgermodel.viewer')}}" role="button">Ledger</a>
+    <a class="btn btn-primary btn-lg" href="{{route('ledgermodel.master')}}" role="button">Ledger</a>
   </p>
 </div>
 
