@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLedgersTable extends Migration
+class CreateLedgermodelsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateLedgersTable extends Migration
      */
     public function up()
     {
-        Schema::create('ledgers', function (Blueprint $table) {
+        Schema::create('ledgermodels', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('cash')->nullable();
             $table->integer('receivable')->nullable();
@@ -37,6 +37,6 @@ class CreateLedgersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ledgers');
+        Schema::dropIfExists('ledgermodels');
     }
 }

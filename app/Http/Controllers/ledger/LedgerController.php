@@ -1,29 +1,29 @@
 <?php
 
-namespace App\Http\Controllers\ledger;
+namespace App\Http\Controllers\ledgermodel;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
-use App\Model\Ledger;
+use App\Model\ledgermodel;
 class LedgerController extends Controller
 {
   /* public function view()
     {
     	//to use array function
     	//$data['countLogo'] = Logo::count();
-    	$data['alldata']=Ledger::all();
-    	return view('frontend.Ledger.view-Ledger',$data);
+    	$data['alldata']=ledgermodel::all();
+    	return view('frontend.ledgermodel.view-ledgermodel',$data);
     	
     }*/
     public function viewer()
         {
             //to use array function
             //$data['countLogo'] = Logo::count();
-            $data['alldata']=Ledger::where('created_by',Auth::user()->id)->get();
+            $data['alldata']=ledgermodel::where('created_by',Auth::user()->id)->get();
             
             //dd($data);
-            return view('frontend.Ledger.viewer-Ledger',$data);
+            return view('frontend.ledgermodel.viewer-ledgermodel',$data);
             //to use compact function
             /*$alldata = User::all();
             dd($alldata->toArray());
@@ -33,14 +33,14 @@ class LedgerController extends Controller
 
     public function add()
     {
-    	return view('frontend.Ledger.add-Ledger');
+    	return view('frontend.ledgermodel.add-ledgermodel');
     }
 
     public function store(Request $request)
     {
     	
 
-    	$data = new Ledger();
+    	$data = new ledgermodel();
     	$data->short_title =$request->short_title;
     	$data->long_title =$request->long_title;
     	$data->created_by = Auth::user()->id;
@@ -52,22 +52,22 @@ class LedgerController extends Controller
     		$data['image']=$filename;
         	}
     	$data->save();
-    	return redirect()->route('sliders.view')->with('success','Ledger inserted  successfully');
+    	return redirect()->route('sliders.view')->with('success','ledgermodel inserted  successfully');
 
     	
     }
 
     public function edit($id)
     {
-    	$editData=Ledger::find($id);
+    	$editData=ledgermodel::find($id);
     	//dd($editData);
-    	return view('frontend.Ledger.edit-Ledger',compact('editData'));
+    	return view('frontend.ledgermodel.edit-ledgermodel',compact('editData'));
     }
 
 
     public function update(Request $request,$id)
     {
-    	$data = Ledger::find($id);
+    	$data = ledgermodel::find($id);
     	$data->short_title =$request->short_title;
     	$data->long_title =$request->long_title;
     	$data->created_by = Auth::user()->id;
@@ -87,13 +87,13 @@ class LedgerController extends Controller
 
     public function delete($id)
     {
-    	$Ledger = Ledger::find($id);
-    	if (file_exists('public/upload/user_images'.$Ledger->image) AND ! empty($Ledger->image)) {
+    	$ledgermodel = ledgermodel::find($id);
+    	if (file_exists('public/upload/user_images'.$ledgermodel->image) AND ! empty($ledgermodel->image)) {
     		
 
-    		unlink('public/upload/user_images'.$Ledger->image);
+    		unlink('public/upload/user_images'.$ledgermodel->image);
     	}
-    	$Ledger->delete();
-    	return redirect()->route('sliders.view')->with('success','Ledger deleted successfully');
+    	$ledgermodel->delete();
+    	return redirect()->route('sliders.view')->with('success','ledgermodel deleted successfully');
     }
 }

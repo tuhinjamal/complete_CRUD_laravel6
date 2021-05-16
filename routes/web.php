@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'Frontend\frontendcontroller@index')->name('home');
 
 
-Route::prefix('sliders')->group(function(){
+Route::prefix('ledger')->group(function(){
 
 	//Route::get('/view', 'ledger\LedgerController@view')->name('sliders.view');
 	Route::get('/viewer', 'ledger\LedgerController@viewer')->name('sliders.viewer');
