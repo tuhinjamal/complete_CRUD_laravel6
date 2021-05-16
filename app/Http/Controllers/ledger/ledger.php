@@ -15,8 +15,8 @@ class ledger extends Controller
             $data['alldata']=ledgermodels::all();
             //$data['alldata']=ledgermodels::where('created_by',Auth::user()->id)->get();
             
-            //dd($data);
-            return view('frontend.ledgermodel.viewer-ledgermodel',$data);
+            dd($data);
+            //return view('frontend.ledgermodel.viewer-ledgermodel',$data);
             //to use compact function
             /*$alldata = User::all();
             dd($alldata->toArray());
