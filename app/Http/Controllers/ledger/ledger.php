@@ -5,7 +5,7 @@ namespace App\Http\Controllers\ledger;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
-use App\Model\ledgermodels;
+use App\model\ledgermodels;
 class ledger extends Controller
 {
     public function viewer()
