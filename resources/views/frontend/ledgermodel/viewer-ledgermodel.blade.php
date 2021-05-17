@@ -116,7 +116,7 @@
                <div class="card-header">
                 <h3>Slider list
                   
-                  <a class="btn btn-primary float-right" href="{{route('sliders.add')}}"><i class="fa fa-plus-circle"></i>Add Slider </a>
+                  <a class="btn btn-primary float-right" href="{{route('ledgermodel.add')}}"><i class="fa fa-plus-circle"></i>Add Slider </a>
                   
                 </h3>
                 </div>
@@ -163,8 +163,8 @@
 
                         <td>
                           
-                          <a title="edit" class="btn btn-primary" href="{{route('sliders.edit',$slider->id)}} "><i class="fa fa-edit"></i></a>
-                          <a title="delete" id="delete" class="btn btn-danger" href=" {{route('sliders.delete',$slider->id)}} "><i class="fa fa-trash"></i></a>
+                          <a title="edit" class="btn btn-primary" href="{{route('ledgermodel.edit',$ledger->id)}} "><i class="fa fa-edit"></i></a>
+                          <a title="delete" id="delete" class="btn btn-danger" href=" {{route('ledgermodel.delete',$ledger->id)}} "><i class="fa fa-trash"></i></a>
 
                         </td>
                       </tr>
