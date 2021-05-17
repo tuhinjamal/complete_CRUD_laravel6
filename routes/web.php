@@ -23,7 +23,7 @@ Route::get('/', 'Frontend\frontendcontroller@index')->name('home');
 
 Route::group(['middleware'=>'test'],function({
 
-		Route::prefix('ledger')->group(function(){
+		Route::prefix('ledgermodel')->group(function(){
 
 		//Route::get('/view', 'ledger\LedgerController@view')->name('sliders.view');
 		Route::get('/master', 'ledger\ledger@master')->name('ledgermodel.master');
