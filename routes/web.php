@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'Frontend\frontendcontroller@index')->name('home');
 
-Route::group(['middleware'=>'test'],function(){
+Route::group(['middleware'=>'ledger'],function(){
 
 		Route::prefix('ledgermodel')->group(function(){
 
