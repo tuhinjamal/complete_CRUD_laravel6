@@ -20,8 +20,8 @@ class ledger
             return $next($request);
 
         }else{
-           // return redirect('/login');
-            return redirect()->back();
+            return redirect('/login');
+            //return redirect()->back();
         }
     }
 }
