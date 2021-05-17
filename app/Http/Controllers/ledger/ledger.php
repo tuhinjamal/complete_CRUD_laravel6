@@ -40,12 +40,20 @@ class ledger extends Controller
     	
 
     	$data = new ledgermodels();
-    	$data->short_title =$request->short_title;
-    	$data->long_title =$request->long_title;
+    	$data->cash =$request->cash;
+        $data->receivable =$request->receivable;
+        $data->equipment =$request->equipment;
+        $data->note_payble =$request->note_payble;
+        $data->account_payble =$request->account_payble;
+        $data->capital =$request->capital;
+        $data->drawing =$request->drawing;
+        $data->revenue =$request->revenue;
+        $data->expense =$request->expense;    	
     	$data->created_by = Auth::user()->id;
+        $data->updated_by = Auth::user()->id;
     		
     	$data->save();
-    	return redirect()->route('ledgermodel.view')->with('success','ledgermodel inserted  successfully');
+    	return redirect()->route('ledgermodel.viewer')->with('success','ledgermodel inserted  successfully');
 
     	
     }
