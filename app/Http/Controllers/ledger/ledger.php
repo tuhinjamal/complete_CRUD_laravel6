@@ -49,8 +49,8 @@ class ledger extends Controller
         $data->drawing =$request->drawing;
         $data->revenue =$request->revenue;
         $data->expense =$request->expense;    	
-    	$data->created_by = Auth::user()->id;
-        $data->updated_by = Auth::user()->id;
+    	$data->created_by = Auth::User()->id;
+        $data->updated_by = Auth::User()->id;
     		
     	$data->save();
     	return redirect()->route('ledgermodel.viewer')->with('success','ledgermodel inserted  successfully');
