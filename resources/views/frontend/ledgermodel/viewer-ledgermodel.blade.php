@@ -159,8 +159,7 @@
                         <td> {{$ledger->drawing}} </td>
                         <td> {{$ledger->revenue}} </td>
                         <td> {{$ledger->expense}} </td>
-                        <td> {{$ledger->created_by ?? ''}} </td>
-                        <td> {{$ledger->updated_by ?? ''}} </td>
+                        
                         
 
                         <td>
