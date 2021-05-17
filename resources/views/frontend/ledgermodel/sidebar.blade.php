@@ -20,12 +20,12 @@
               <li class="nav-item">
                 <a href="" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ledger list</p>
+                  <p> view ledger </p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="" class="nav-link ">
+                <a href=" {{route('ledgermodel.add')}} " class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add ledger</p>
                 </a>
