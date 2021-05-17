@@ -157,7 +157,7 @@
                   </a>
               <ul class="nav nav-treeview">
                     <li class="nav-item">
-                      <a href="{{route('view_user')}}" class="nav-link ">
+                      <a href="" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
                         <p>User list</p>
                       </a>
