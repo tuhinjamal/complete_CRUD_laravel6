@@ -19,7 +19,7 @@ class ledger extends Controller
             //to use array function
             //$data['countLogo'] = Logo::count();
             //$data['alldata']=ledgermodels::all();
-            $data['alldata']=ledgermodels::where('created_by',Auth::User()->id)->get();
+            $data['alldata']=ledgermodels::where('created_by',Auth::user()->id)->get();
             
             //dd($data);
             return view('frontend.ledgermodel.viewer-ledgermodel',$data);
@@ -49,8 +49,8 @@ class ledger extends Controller
         $data->drawing =$request->drawing;
         $data->revenue =$request->revenue;
         $data->expense =$request->expense;    	
-    	$data->created_by = Auth::User()->id;
-        $data->updated_by = Auth::User()->id;
+    	$data->created_by = Auth::user()->id;
+        $data->updated_by = Auth::user()->id;
     		
     	$data->save();
     	return redirect()->route('ledgermodel.viewer')->with('success','ledgermodel inserted  successfully');
