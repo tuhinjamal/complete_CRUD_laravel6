@@ -18,7 +18,7 @@
           
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="" class="nav-link ">
+                <a href="{{route('ledgermodel.viewer')}}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p> view ledger </p>
                 </a>
