@@ -90,6 +90,6 @@ class ledger extends Controller
     {
     	$ledgermodel = ledgermodels::find($id);
     	$ledgermodel->delete();
-    	return redirect()->route('ledgermodel.view')->with('success','ledgermodel deleted successfully');
+    	return redirect()->route('ledgermodel.viewer')->with('success','ledgermodel deleted successfully');
     }
 }
