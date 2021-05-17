@@ -158,6 +158,7 @@
                         <td> {{$ledger->capital}} </td>
                         <td> {{$ledger->drawing}} </td>
                         <td> {{$ledger->revenue}} </td>
+                        <td> {{$ledger->expense}} </td>
                         
 
                         <td>
