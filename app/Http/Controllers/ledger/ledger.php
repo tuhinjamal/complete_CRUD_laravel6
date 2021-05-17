@@ -4,8 +4,9 @@ namespace App\Http\Controllers\ledger;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use auth;
+use Auth;
 use App\model\ledgermodels;
+use App\User;
 class ledger extends Controller
 {
 
@@ -19,7 +20,7 @@ class ledger extends Controller
             //to use array function
             //$data['countLogo'] = Logo::count();
            //$data['alldata']=ledgermodels::all();
-            $data['alldata']=ledgermodels::where('created_by',auth::user()->id)->get();
+            $data['alldata']=ledgermodels::where('created_by',Auth::user()->id)->get();
             
             //dd($data);
             return view('frontend.ledgermodel.viewer-ledgermodel',$data);
