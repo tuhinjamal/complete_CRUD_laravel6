@@ -27,12 +27,12 @@ Route::get('/', 'Frontend\frontendcontroller@index')->name('home');
 Route::prefix('ledger')->group(function(){
 
 	//Route::get('/view', 'ledger\LedgerController@view')->name('sliders.view');
-	Route::get('/master', 'ledger\ledger@master')->name('ledgermodel.master');
-	Route::get('/viewer', 'ledger\ledger@viewer')->name('ledgermodel.viewer');
-	Route::get('/add', 'ledger\ledger@add')->name('ledgermodel.add');
-	Route::post('/store', 'ledger\ledger@store')->name('ledgermodel.store');
-	Route::get('/edit/{id?}', 'ledger\ledger@edit')->name('ledgermodel.edit');
-	Route::post('/upadate/{id?}', 'ledger\ledger@update')->name('ledgermodel.update');
-	Route::get('/delete/{id?}', 'ledger\ledger@delete')->name('ledgermodel.delete');
-})->middleware('test');
+	Route::get('/master', 'ledger\ledger@master')->name('ledgermodel.master')->middleware('test');
+	Route::get('/viewer', 'ledger\ledger@viewer')->name('ledgermodel.viewer')->middleware('test');
+	Route::get('/add', 'ledger\ledger@add')->name('ledgermodel.add')->middleware('test');
+	Route::post('/store', 'ledger\ledger@store')->name('ledgermodel.store')->middleware('test');
+	Route::get('/edit/{id?}', 'ledger\ledger@edit')->name('ledgermodel.edit')->middleware('test');
+	Route::post('/upadate/{id?}', 'ledger\ledger@update')->name('ledgermodel.update')->middleware('test');
+	Route::get('/delete/{id?}', 'ledger\ledger@delete')->name('ledgermodel.delete')->middleware('test');
+});
 
