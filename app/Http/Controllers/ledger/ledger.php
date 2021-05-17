@@ -18,8 +18,8 @@ class ledger extends Controller
         {
             //to use array function
             //$data['countLogo'] = Logo::count();
-           // $data['alldata']=ledgermodels::all();
-            $data['alldata']=ledgermodels::where('created_by',Auth::User()->id)->get();
+           $data['alldata']=ledgermodels::all();
+            //$data['alldata']=ledgermodels::where('created_by',Auth::User()->id)->get();
             
             //dd($data);
             return view('frontend.ledgermodel.viewer-ledgermodel',$data);
