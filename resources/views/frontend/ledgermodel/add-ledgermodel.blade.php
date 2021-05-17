@@ -1,5 +1,5 @@
 
-@extends('backend.layouts.master')
+@extends('frontend.ledgermodel.master')
 @section('content')
 
 <!-- Content Wrapper. Contains page content -->
