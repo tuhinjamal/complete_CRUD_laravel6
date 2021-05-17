@@ -9,12 +9,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Manage Slider</h1>
+            <h1 class="m-0 text-dark">Manage ledger</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Slider</li>
+              <li class="breadcrumb-item active">ledger</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -114,9 +114,9 @@
 
 
                <div class="card-header">
-                <h3>Slider list
+                <h3>ledger list
                   
-                  <a class="btn btn-primary float-right" href="{{route('ledgermodel.add')}}"><i class="fa fa-plus-circle"></i>Add Slider </a>
+                  <a class="btn btn-primary float-right" href="{{route('ledgermodel.add')}}"><i class="fa fa-plus-circle"></i>Add ledger </a>
                   
                 </h3>
                 </div>
@@ -141,7 +141,7 @@
                         <th>drawing</th>
                         <th>revenue</th>
                         <th>expense</th>
-                        <th>created_by</th>
+                        
                        
                       </tr>
                     </thead>
@@ -149,7 +149,7 @@
                       @foreach($alldata as $key =>$ledger)
                       <tr>
                         <td>{{$key+1}}</td>
-                        <td><img src="{{(!empty($slider->image))?url('upload/slider_images/'.$slider->image):url('upload/no_image.png')}}" width="120px" height="130px"></td>
+                        
                         <td> {{$ledger->cash}} </td>
                         <td> {{$ledger->receivable}} </td>
                         <td> {{$ledger->equipment}} </td>
@@ -158,8 +158,7 @@
                         <td> {{$ledger->capital}} </td>
                         <td> {{$ledger->drawing}} </td>
                         <td> {{$ledger->revenue}} </td>
-                        <td> {{$ledger->Auth::User()->id}} </td>
-                        <td> {{$ledger->Auth::User()->id}} </td>
+                        
 
                         <td>
                           
