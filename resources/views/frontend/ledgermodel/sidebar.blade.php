@@ -1,7 +1,4 @@
-@php
-$prefix = Request::route()->getPrefix();
-$route = Route::current()->getName();
-@endphp
+
 
  <!-- Sidebar Menu -->
   <nav class="mt-2">
@@ -35,7 +32,7 @@ $route = Route::current()->getName();
                   <p>Add ledger</p>
                 </a>
               </li>
-              @endif
+              
         </ul>
       </ul>
 
