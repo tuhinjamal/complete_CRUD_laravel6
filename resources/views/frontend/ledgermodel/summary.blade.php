@@ -6,7 +6,7 @@
 
 
           
-@extends('frontend.ledgermodel.viewer')
+@extends('frontend.ledgermodel.viewer-ledgermoder')
 @yield('content')
               <!-- /.card-header -->
               <div class="card-body">
