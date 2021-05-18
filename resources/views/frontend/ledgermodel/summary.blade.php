@@ -55,7 +55,7 @@
                <div class="card-header">
                 <h3>ledger list
                   
-                  <a class="btn btn-primary float-right" href="{{route('ledgermodel.add')}}"><i class="fa fa-plus-circle"></i>Add ledger </a>
+                  <a class="btn btn-primary float-right" href="{{route('ledgermodel.viewer')}}"><i class="fa fa-plus-circle"></i>view ledger </a>
                   
                 </h3>
                 </div>
