@@ -132,8 +132,9 @@
                     <thead>
                       <tr>
                       
-                        <th>cash</th>
-                        <
+                        <th>Asset  =</th>
+                        <th>Liabilities+owner's equity</th>
+                        
                        
                       </tr>
                     </thead>
@@ -143,6 +144,7 @@
                        
                         
                         <td> {{$sum}} </td>
+                        <td> {{$sum2}} </td>
                         
 
                         
