@@ -1,18 +1,11 @@
 
-@extends('frontend.ledgermodel.master')
+
 @extends('frontend.ledgermodel.viewer')
 @section('content')
 
 
 
-               <div class="card-header">
-                <h3>ledger summary
-                  
-                  <a class="btn btn-primary float-right" href="{{route('ledgermodel.add')}}"><i class="fa fa-plus-circle"></i>Add ledger </a>
-                  
-                </h3>
-                </div>
-              
+          
 
 
               <!-- /.card-header -->
@@ -51,7 +44,7 @@
 
 
               
-            </div>
+    
             <!-- /.card -->
 
             
@@ -59,14 +52,8 @@
             
 
             
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
+      
+
   <!-- /.content-wrapper -->
 
   @endsection
