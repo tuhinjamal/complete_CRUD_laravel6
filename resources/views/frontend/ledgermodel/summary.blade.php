@@ -1,6 +1,6 @@
 
 
-@extends('frontend.ledgermodel.viewer')
+@include('frontend.ledgermodel.viewer')
 @section('content')
 
 
