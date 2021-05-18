@@ -28,6 +28,7 @@ Route::group(['middleware'=>'ledger'],function(){
 		//Route::get('/view', 'ledger\LedgerController@view')->name('sliders.view');
 		Route::get('/master', 'ledger\ledger@master')->name('ledgermodel.master');
 		Route::get('/viewer', 'ledger\ledger@viewer')->name('ledgermodel.viewer');
+		Route::get('/summary', 'ledger\ledger@summary')->name('ledgermodel.summary');
 		Route::get('/add', 'ledger\ledger@add')->name('ledgermodel.add');
 		Route::post('/store', 'ledger\ledger@store')->name('ledgermodel.store');
 		Route::get('/edit/{id?}', 'ledger\ledger@edit')->name('ledgermodel.edit');
