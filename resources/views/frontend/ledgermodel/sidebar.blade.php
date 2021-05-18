@@ -30,6 +30,13 @@
                   <p>Add ledger</p>
                 </a>
               </li>
+
+               <li class="nav-item">
+                <a href=" {{route('ledgermodel.add')}} " class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>{{$sum}}</p>
+                </a>
+              </li>
               
         </ul>
         </li>

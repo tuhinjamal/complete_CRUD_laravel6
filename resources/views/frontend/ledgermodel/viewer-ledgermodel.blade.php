@@ -179,35 +179,7 @@
               </div><!-- /.card-body -->
 
 
-               <div class="card-body">
-                
-                  
-                   <table id="example1" class="table table-bordered table-striped">
-
-                    <thead>
-                      <tr>
-                       
-                        <th>Asset</th>
-                        <th>Liabilities</th>
-                        <th>Owner's equity</th>
-                        
-                       
-                      </tr>
-                    </thead>
-                    <tbody>
-                     
-                      <tr>
-                       
-                        
-                        <td> {{$sum}} </td>
-                        
-                      
-                      </tr>
-                     
-                    </tbody>
-                    </table>                  
-               
-              </div><!-- /.card-body -->
+              
             </div>
             <!-- /.card -->
 
