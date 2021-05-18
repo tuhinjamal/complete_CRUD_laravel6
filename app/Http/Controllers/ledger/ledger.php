@@ -30,7 +30,7 @@ class ledger extends Controller
 
             
             //dd($sum,$sum2);
-            return view('frontend.ledgermodel.viewer-ledgermodel',$data);
+            return view('frontend.ledgermodel.viewer-ledgermodel',$data,$sum);
             //to use compact function
             /*$alldata = User::all();
             dd($alldata->toArray());
