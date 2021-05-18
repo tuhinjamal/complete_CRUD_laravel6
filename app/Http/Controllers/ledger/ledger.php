@@ -21,6 +21,7 @@ class ledger extends Controller
             //$data['countLogo'] = Logo::count();
             //$data['alldata']=ledgermodels::all();
             $data['alldata']=ledgermodels::where('created_by',Auth::user()->id)->get();
+            $sum= DB::table('ledgermodels')->where('created_by',Auth::user()->id)->sum(\DB::raw('cash + receivable+equipment'));
             
 
 

@@ -199,7 +199,7 @@
                       <tr>
                        
                         
-                        <td> abcd </td>
+                        <td> {{$sum}} </td>
                         
                       
                       </tr>
