@@ -19,12 +19,12 @@ class ledger extends Controller
             //to use array function
             //$data['countLogo'] = Logo::count();
             //$data['alldata']=ledgermodels::all();
-            //$data['alldata']=ledgermodels::where('created_by',Auth::user()->id)->get();
-            $sum['alldata']=ledgermodels::where('created_by',Auth::user()->id)->sum('cash','receivable','equipment');
-            $sum2['alldata']=ledgermodels::where('created_by',Auth::user()->id)->sum('note_payble','account_payble','capital','drawing','revenue','expense');
+            $data['alldata']=ledgermodels::where('created_by',Auth::user()->id)->get();
+            $sum['sum']=ledgermodels::where('created_by',Auth::user()->id)->sum('cash','receivable','equipment');
+            $sum2['sum']=ledgermodels::where('created_by',Auth::user()->id)->sum('note_payble','account_payble','capital','drawing','revenue','expense');
             
-            dd($sum,$sum2);
-            //return view('frontend.ledgermodel.viewer-ledgermodel',$data,$sum);
+            //dd($sum,$sum2);
+            return view('frontend.ledgermodel.viewer-ledgermodel',$data,$sum,$sum2);
             //to use compact function
             /*$alldata = User::all();
             dd($alldata->toArray());
