@@ -32,7 +32,7 @@ class ledger extends Controller
     public function summary()
     {
         $sum= DB::table('ledgermodels')->where('created_by',Auth::user()->id)->sum(\DB::raw('cash + receivable+equipment'));
-        return view('frontend.ledgermodel.sidebar',['sum'=>$sum]);
+        return view('frontend.ledgermodel.summary',['sum'=>$sum]);
     }
 
     public function add()
