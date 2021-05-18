@@ -24,7 +24,7 @@
                              @endif
                         @endauth
                        @endif   
-
+                       @endguest
                     </ul>
                 </div>
             </div>
@@ -50,7 +50,7 @@
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
         </footer>
 
-@endguest
+
 @endsection
 
        
