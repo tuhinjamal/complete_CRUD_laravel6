@@ -7,6 +7,7 @@
 
 
 <!-- Navigation-->
+@guest
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">Ledger Management</a>
@@ -49,7 +50,7 @@
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
         </footer>
 
-
+@endguest
 @endsection
 
        
