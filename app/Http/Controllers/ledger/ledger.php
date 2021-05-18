@@ -81,7 +81,7 @@ class ledger extends Controller
         $data->created_by = Auth::user()->id;
         $data->updated_by = Auth::user()->id;
     	$data->save();
-    	return redirect()->route('ledgermodel.view')->with('success','data updated successfully');
+    	return redirect()->route('ledgermodel.viewer')->with('success','data updated successfully');
     	
     }
 
