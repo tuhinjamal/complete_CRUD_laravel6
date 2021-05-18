@@ -23,7 +23,7 @@ class ledger extends Controller
             $data['alldata']=ledgermodels::where('created_by',Auth::user()->id)->get();
             
 
-            $sum=DB::table('ledgermodels')::where('created_by',Auth::user()->id)->sum(\DB::raw('cash + receivable+equipment'));
+            $sum=DB::table('ledgermodels')->where('created_by',Auth::user()->id)->sum(\DB::raw('cash + receivable+equipment'));
            // $sum2=DB::table('ledgermodels')->sum(\DB::raw('note_pyb + acc_pyb +capital+revenue'));
 
 
