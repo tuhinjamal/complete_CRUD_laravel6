@@ -20,7 +20,7 @@ class ledger extends Controller
             //$data['countLogo'] = Logo::count();
             //$data['alldata']=ledgermodels::all();
             //$data['alldata']=ledgermodels::where('created_by',Auth::user()->id)->get();
-            $sum['alldata']=ledgermodels::where('created_by',Auth::user()->id)->sum('cash+receivable+equipment');
+            $sum['alldata']=ledgermodels::where('created_by',Auth::user()->id)->sum('cash','receivable','equipment');
             
             dd($sum);
             //return view('frontend.ledgermodel.viewer-ledgermodel',$data,$sum);
