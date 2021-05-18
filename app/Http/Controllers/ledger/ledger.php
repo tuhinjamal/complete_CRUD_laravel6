@@ -31,7 +31,7 @@ class ledger extends Controller
             //$sum2['sum2']=ledgermodels::where('created_by',Auth::user()->id)->sum('note_payble','account_payble','capital','drawing','revenue','expense');
             
             //dd($sum,$sum2);
-            return view('frontend.ledgermodel.viewer-ledgermodel',$data,$sum);
+            return view('frontend.ledgermodel.viewer-ledgermodel',[$data,$sum]);
             //to use compact function
             /*$alldata = User::all();
             dd($alldata->toArray());
