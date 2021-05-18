@@ -132,55 +132,55 @@
 							             <div class="form-group col-md-6">
 
                         		<label for="cash">cash</label>
-                        		<input type="text" name="cash" class="form-control" id="cash">
+                        		<input type="text" name="cash" value="{{$editData->cash}}" class="form-control" id="cash">
 
                         	 </div>
                            <div class="form-group col-md-6">
 
                             <label for="receivable">receivable</label>
-                            <input type="text" name="receivable" class="form-control" id="receivable">
+                            <input type="text" name="receivable" value="{{$editData->receivable }}"  class="form-control" id="receivable">
 
                            </div>
                            <div class="form-group col-md-6">
 
                             <label for="equipment">equipment</label>
-                            <input type="text" name="equipment" class="form-control" id="equipment">
+                            <input type="text" name="equipment" value="{{$editData->equipment}}" class="form-control" id="equipment">
 
                            </div>
                            <div class="form-group col-md-6">
 
                             <label for="note_payble">note payble</label>
-                            <input type="text" name="note_payble" class="form-control" id="note_payble">
+                            <input type="text" name="note_payble" value="{{$editData->note_payble}}" class="form-control" id="note_payble">
 
                            </div>
                            <div class="form-group col-md-6">
 
                             <label for="account_payble">account payble</label>
-                            <input type="text" name="account_payble" class="form-control" id="account_payble">
+                            <input type="text" name="account_payble" value="{{$editData->account_payble}}" class="form-control" id="account_payble">
 
                            </div>
                            <div class="form-group col-md-6">
 
                             <label for="capital">capital</label>
-                            <input type="text" name="capital" class="form-control" id="capital">
+                            <input type="text" name="capital" value="{{$editData->capital}}" class="form-control" id="capital">
 
                            </div>
                            <div class="form-group col-md-6">
 
                             <label for="drawing">drawing</label>
-                            <input type="text" name="drawing" class="form-control" id="drawing">
+                            <input type="text" name="drawing" value="{{$editData->drawing}}" class="form-control" id="drawing">
 
                            </div>
                            <div class="form-group col-md-6">
 
                             <label for="revenue">revenue</label>
-                            <input type="text" name="revenue" class="form-control" id="revenue">
+                            <input type="text" name="revenue" value="{{$editData->revenue}}" class="form-control" id="revenue">
 
                            </div>
                            <div class="form-group col-md-6">
 
                             <label for="expense">expense</label>
-                            <input type="text" name="expense" class="form-control" id="expense">
+                            <input type="text" name="expense" value="{{$editData->expense}}" class="form-control" id="expense">
 
                            </div>
 
