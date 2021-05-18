@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
 use App\model\ledgermodels;
-use DB;
 class ledger extends Controller
 {
 
@@ -23,8 +22,8 @@ class ledger extends Controller
             $data['alldata']=ledgermodels::where('created_by',Auth::user()->id)->get();
             
 
-            $sum['alldata']=ledgermodels::where('created_by',Auth::user()->id)->sum(\DB::raw('cash + receivable+equipment'));
-            //$sum2=DB::table('ledgermodels')->sum(\DB::raw('note_pyb + acc_pyb +capital+revenue'));
+            $sum=DB::table('ledgermodels')::where('created_by',Auth::user()->id)->sum(\DB::raw('cash + receivable+equipment'));
+           // $sum2=DB::table('ledgermodels')->sum(\DB::raw('note_pyb + acc_pyb +capital+revenue'));
 
 
             //$sum['sum']=ledgermodels::where('created_by',Auth::user()->id)->sum('cash','receivable','equipment');
