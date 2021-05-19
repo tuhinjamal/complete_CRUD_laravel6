@@ -1,0 +1,22 @@
+git --version	//to check git version
+git init 	//to create  a repository 
+git config --global user.name"tuhinjamal"
+//to set user name globally for a git repository
+git config --global user.email"tuhinjamal1@gmail.com"
+//to set user email globally for a git repository
+
+git config user.name"tuhinjamal"
+//to set user name locally for a git repository
+
+git config --list	//to check the name and email set for a repository
+git status	//to check tracked and untracked file in a repository
+git add .	//to stage all files in repository
+git add --all	//to stage all files in repository
+git add	filename.ext // to stage a specific file in a repository	
+git commit	//to add message for commit
+git commit -m "your message"	//to add message for commit in a shortcut way
+git log		//to see all the commit you have done before
+
+
+
+
