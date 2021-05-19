@@ -36,4 +36,14 @@ Route::group(['middleware'=>'ledger'],function(){
 		Route::get('/delete/{id?}', 'ledger\ledger@delete')->name('ledgermodel.delete');
 	});
 
+	Route::prefix('profiles')->group(function(){
+
+	Route::get('/view', 'Backend\ProfileController@view')->name('profiles.view');
+	Route::get('/edit', 'Backend\ProfileController@edit')->name('profiles.edit');
+	Route::post('/store', 'Backend\ProfileController@update')->name('profiles.update');
+	Route::get('/password/view', 'Backend\ProfileController@passwordview')->name('profiles.password.view');
+	Route::post('/password/upadate', 'Backend\ProfileController@passwordupdate')->name('profiles.password.upadate');
+
+});
+
 });
